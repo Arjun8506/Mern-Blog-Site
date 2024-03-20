@@ -8,7 +8,7 @@ import {
   ref,
   uploadBytesResumable,
 } from "firebase/storage";
-import app from "../../firebase.js";
+import app from "../firebase.js";
 
 const Profile = () => {
   const [formData, setformData] = useState({});

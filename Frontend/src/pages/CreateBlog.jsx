@@ -7,7 +7,7 @@ import {
   uploadBytesResumable,
 } from "firebase/storage";
 import { useNavigate } from 'react-router-dom'
-import app from "../../firebase.js";
+import app from "../firebase.js";
 
 
 const CreateBlog = () => {
