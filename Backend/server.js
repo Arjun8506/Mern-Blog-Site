@@ -5,6 +5,7 @@ import ConnectToDB from "./connectToDB/connectsToDB.js"
 import authRoutes from './routes/authRoutes.js'
 import blogRoutes from './routes/blogRoutes.js'
 import commentRoutes from './routes/comment.Routes.js'
+import path from "path"
 
 const app = express()
 dotenv.config()
