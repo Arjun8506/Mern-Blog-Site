@@ -1,0 +1,26 @@
+{
+  "name": "myblogsite",
+  "version": "1.0.0",
+  "description": "Using MERN ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon Backend/server.js",
+    "build":  "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "ARJUN NAGAR",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.2"
+  }
+}
