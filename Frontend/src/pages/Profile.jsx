@@ -127,7 +127,7 @@ const Profile = () => {
           )}
 
           <input
-            className="w-full md:w-[100%] rounded-lg border-2 border-green-600 bg-green-800 px-1 py-2 pointer-events-none"
+            className="w-full md:w-[100%] rounded-lg border-2 border-slate-600 px-1 py-2 pointer-events-none"
             type="text"
             id="fullname"
             placeholder="FullName"
@@ -136,7 +136,7 @@ const Profile = () => {
           />
 
           <input
-            className="w-full md:w-[100%] rounded-lg border-2 border-purple-600 px-1 py-2"
+            className="w-full md:w-[100%] rounded-lg border-2 border-slate-600 px-1 py-2"
             type="text"
             id="username"
             placeholder={authUser.username}
@@ -145,7 +145,7 @@ const Profile = () => {
           />
 
           <input
-            className="w-full md:w-[100%] rounded-lg border-2 border-purple-600 px-1 py-2"
+            className="w-full md:w-[100%] rounded-lg border-2 border-slate-600 px-1 py-2"
             type="email"
             id="email"
             placeholder={authUser.email}
@@ -154,7 +154,7 @@ const Profile = () => {
           />
 
           <input
-            className="w-full md:w-[100%] rounded-lg border-2 border-purple-600 px-1 py-2"
+            className="w-full md:w-[100%] rounded-lg border-2 border-slate-600 px-1 py-2"
             type="password"
             id="password"
             placeholder="Password"
@@ -163,7 +163,7 @@ const Profile = () => {
           />
 
           <button
-            className="uppercase w-full md:w-[100%] bg-green-200 font-semibold py-2 px-4 border-2 border-green-600 disabled:opacity-50 rounded-lg hover:opacity-70 cursor-pointer"
+            className="uppercase w-full md:w-[100%] bg-slate-400 font-semibold py-2 px-4 border-2 border-slate-600 text-white disabled:opacity-50 rounded-lg hover:opacity-70 cursor-pointer"
             disabled={loading}
           >
             {loading ? "Loading...." : "Update"}

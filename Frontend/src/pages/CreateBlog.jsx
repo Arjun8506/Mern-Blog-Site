@@ -85,14 +85,14 @@ const CreateBlog = () => {
 
   return (
     <div>
-      <div className="w-full min-h-[80vh]  py-8 md:py-14 px-8 md:px-20">
+      <div className="w-full min-h-[80vh]  py-8 md:py-14 px-8">
         <div className="w-full min-h-[80vh] flex flex-col items-center">
-          <h1 className="text-1xl mb-4 capitalize font-semibold text-zinc-800">
-            <span className="uppercase mx-2 text-purple-950 font-extrabold text-2xl">
+          <h1 className="text-1xl mb-4 capitalize font-semibold ">
+            <span className="uppercase mx-2 font-bold text-xl">
               create
             </span>
             your blog here and don't worry you can
-            <span className="uppercase mx-2 text-purple-950 font-extrabold text-2xl">
+            <span className="uppercase mx-2 font-bold">
               edit
             </span>
             it any time...
@@ -103,14 +103,14 @@ const CreateBlog = () => {
             className="w-[100%] lg:w-[80%] flex flex-col mx-auto gap-4 items-center"
           >
             <img
-              className="w-[100%] lg:w-[80%] h-[80vh]  border-4 border-purple-900 object-cover rounded-lg mb-4"
+              className="w-[100%] lg:w-[90%] h-[60vh]  border-4 border-slate-700 object-cover rounded-lg mb-4"
               src={formData.coverImage || authUser.profilePic}
               alt="blogCoverImage"
               onClick={() => fileRef.current.click()}
             />
 
             {filePerc ? (
-              <p className="text-center text-sm text-green-400">
+              <p className="text-center text-sm text-green-500">
                 Image Uploaded {filePerc}%
               </p>
             ) : (
@@ -118,7 +118,7 @@ const CreateBlog = () => {
             )}
 
             {fileUploadError ? (
-              <p className="text-center text-sm text-red-400">
+              <p className="text-center text-sm text-red-500">
                 {fileUploadError}
               </p>
             ) : (
@@ -135,7 +135,7 @@ const CreateBlog = () => {
             />
 
             <input
-              className="w-[100%] lg:w-[80%] rounded-lg border-2 border-purple-600 py-1 px-2"
+              className="w-[100%] lg:w-[90%] rounded-lg border-2 border-slate-600 py-1 px-2"
               type="text"
               name="title"
               id="title"
@@ -146,7 +146,7 @@ const CreateBlog = () => {
 
             <textarea
               rows={10}
-              className="w-[100%] lg:w-[80%] rounded-lg border-2 border-purple-600 py-1 px-2"
+              className="w-[100%] lg:w-[90%] rounded-lg border-2 border-slate-600 py-1 px-2"
               type=""
               name="content"
               id="content"
@@ -155,7 +155,7 @@ const CreateBlog = () => {
               onChange={handleInputChange}
             />
 
-            <button className="w-[100%] lg:w-[80%] bg-purple-800 font-semibold py-2 px-4 border-2 border-purple-900 rounded-lg  cursor-pointer hover:opacity-90 disabled:opacity-60"
+            <button className="w-[100%] lg:w-[90%] bg-slate-700 text-white font-semibold py-2 px-4 border-2 border-slate-900 rounded-lg  cursor-pointer hover:opacity-90 disabled:opacity-60"
             disabled={loading}
             >
               {loading ? "Loading...." : "Create Blog"}

@@ -12,10 +12,10 @@ const Header = () => {
   };
 
   return (
-    <div className=" header  px-[4vw] py-5 bg-purple-200 rounded-b-2xl border-b-2 border-purple-700">
+    <div className=" header  px-[4vw] py-5 bg-slate-100 rounded-b-2xl border-b-2 border-slate-700">
       <div className="nav flex justify-between">
-        <div className="flex items-center justify-center mr-5">
-        <button className="text-black text-2xl border-none lg:hidden" onClick={toggleMenu}>
+        <div className="flex items-center justify-center mr-5  lg:hidden">
+        <button className="text-black text-2xl border-none" onClick={toggleMenu}>
           <GiHamburgerMenu />
         </button>
         </div>
@@ -52,21 +52,16 @@ const Header = () => {
           </div>
         ) : ""}
 
-        <div className="logo  flex gap-4 items-center">
-          <img
-            className="w-14 lg:w-20 rounded-full "
-            src="../logo.jpg"
-            alt="Logo"
-          />
+        <div className="logo flex items-center">
           <Link
             to={"/"}
-            className="font-extrabold uppercase text-lg lg:text-4xl leading-tight hover:underline hover:text-purple-500"
+            className="font-extrabold uppercase text-lg lg:text-3xl leading-tight hover:underline hover:text-purple-500"
           >
             Tech blogs
           </Link>
         </div>
         <div className="menu flex">
-          <ul className="flex gap-5 text-xl items-center cursor-pointer">
+          <ul className="flex gap-5 text-base items-center cursor-pointer">
             <Link to={"/"}>
               <li className="hover:text-purple-500 hover:underline hidden lg:inline">
                 Home

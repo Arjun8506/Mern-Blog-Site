@@ -32,7 +32,7 @@ const SignOut = () => {
     <button
       type="button"
       onClick={() => handleLogOut()}
-      className="bg-red-500 px-2 py-2 border-2 border-red-600 rounded-lg hover:opacity-70"
+      className="bg-red-500 px-2 py-2 border-2 text-white border-red-600 rounded-lg hover:opacity-70"
     >
       Sign Out
     </button>

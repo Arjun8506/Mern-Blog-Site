@@ -3,13 +3,12 @@ import React from 'react'
 const About = () => {
   return (
     <div className="w-full py-10">
-      <h1 className="font-bold uppercase text-center text-3xl underline text-purple-900 mb-8">
+      <h1 className="font-bold uppercase text-center text-3xl underline mb-8">
         About us
       </h1>
       <div className="w-[90%] lg:w-[70%] mx-auto ">
         <p
-          className="text-purple-900 mb-4 first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold "
+          className=" mb-4"
         >
           Welcome to my blog website, where you'll embark on a journey through
           the realms of technology, web development, movies, and anime. Here,
@@ -21,8 +20,7 @@ const About = () => {
         </p>
 
         <p
-          className="text-purple-900 mb-4 first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold "
+          className=" mb-4"
         >
           But that's not all; cinephiles and anime aficionados will also find a
           haven here. Explore in-depth analyses, reviews, and discussions on the
@@ -32,8 +30,7 @@ const About = () => {
         </p>
 
         <p
-          className="text-purple-900 mb-4 first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold "
+          className=" mb-4"
         >
           Whether you're seeking to expand your technical knowledge, indulge in
           cinematic delights, or immerse yourself in the captivating universe of

@@ -30,7 +30,7 @@ const EditBlog = ({blogId}) => {
 
   return (
     <div className='flex flex-col gap-2'>
-    <button onClick={() => editBlog()} type='button' className='bg-green-600 py-2 px-2 rounded-lg font-bold uppercase hover:opacity-75' >
+    <button onClick={() => editBlog()} type='button' className='bg-green-600 text-white py-2 px-2 rounded-lg font-bold uppercase hover:opacity-75' >
         Edit Blog
     </button>
     {errorgot ? (

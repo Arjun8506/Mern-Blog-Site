@@ -127,8 +127,8 @@ const ReadBlog = () => {
   }, [commentData]);
 
   return (
-    <div className="w-full mx-auto lg:w-[60%] min-h-screen p-4">
-      <div className="w-full h-[60vh] lg:h-[100vh] border-4 rounded-lg overflow-hidden border-purple-500">
+    <div className="w-full mx-auto lg:w-[70%] min-h-screen p-4">
+      <div className="w-full h-[60vh] lg:h-[60vh] border-4 rounded-lg overflow-hidden border-purple-500">
         <img
           className="w-full h-full object-cover"
           src={blogToRead.coverImage}
@@ -169,13 +169,13 @@ const ReadBlog = () => {
         </div>
         <div>
           <div className="text-sm md:text-lg">
-            <p className="text-sm text-center">{blogToRead.content}</p>
+            <p className="text-sm">{blogToRead.content}</p>
           </div>
         </div>
       </div>
 
       {authUser ? (
-        <div className="w-[80%] mx-auto my-4 rounded-lg shadow-md shadow-slate-900  lg:w-[50%] h-[20vh] bg-purple-300 p-5">
+        <div className="w-[90%] mx-auto my-4 rounded-lg shadow-md shadow-slate-900  lg:w-[60%] h-fit bg-slate-100 p-5">
           <h1 className="text-sm capitalize font-semibold">Comment :</h1>
           <form
             className="w-full flex gap-2"

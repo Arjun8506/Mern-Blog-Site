@@ -40,24 +40,24 @@ const Comment = ({ comment }) => {
   };
 
   return (
-    <div className="w-[80%] mx-auto lg:w-[60%] h-[15vh] md:min-h-[30vh] rounded-md bg-purple-100 p-5">
+    <div className="w-[80%] mx-auto lg:w-[60%] h-[15vh] md:h-fit rounded-md bg-purple-100 px-3 py-2">
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-1 mb-2 md:mt-4">
+        <div className="flex items-center gap-1 mb-2 ">
           <img
-            className="w-4 h-4 object-cover rounded-full"
+            className="w-6 h-6 object-cover rounded-full"
             src={comment.user?.profilePic || authorimage}
             alt=""
           />
-          <span className=" text-[1.6vw] text-slate-400 capitalize font-semibold">
+          <span className=" text-sm capitalize font-semibold">
             {comment.user?.fullname}
           </span>
         </div>
-        <p className="text-[1.6vw] text-slate-900 font-semibold">
+        <p className="text-xs font-semibold">
           {formattedDate}
         </p>
       </div>
-      <div className="flex justify-between">
-        <h1 className="font-semibold text-[2vw] text-black">
+      <div className="flex justify-between my-2">
+        <h1 className="font-semibold text-base text-black">
           {comment.comment}
         </h1>
 

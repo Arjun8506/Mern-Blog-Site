@@ -133,7 +133,7 @@ export const updateBlog = async (req, res, next) => {
 export const myBlogs = async (req, res, next) => {
     try {
         const userID = req.user.id
-        const blogs = await Blog.find({author: userID})
+        const blogs = await Blog.find({author: userID}).populate("author")
         if (!blogs) {
             return next(errorHandler(403, "unable to fetch blogs"))
         }

@@ -13,30 +13,32 @@ const BlogRead = ({blog}) => {
     hour12: true
   });
 
+  console.log(blog);
+
   return (
-    <div className="w-full md:w-[32%] border-4 border-purple-800 rounded-lg">
-      <div className="w-full h-[60vh] bg-sky-500 relative">
-        <div className="w-full h-full">
+    <div className="w-full md:w-[32%] border-2 border-slate-700 rounded-lg overflow-hidden">
+      <div className="w-full h-fit relative">
+        <div className="w-full h-[40vh]">
           <img
             className="w-full h-full object-cover"
             src={blog?.coverImage}
             alt="coverImage"
           />
         </div>
-        <div className="absolute bottom-1  p-3 flex flex-col gap-2">
+        <div className=" p-3 flex flex-col gap-2">
           <div className="flex justify-between items-center">
-            <p className="text-sm text-slate-100 font-semibold">{formattedDate}</p>
+            <p className="text-sm font-semibold">{formattedDate}</p>
             <div className="flex items-center gap-2">
               <img
                 className="w-8 h-8 object-cover rounded-full"
                 src={blog?.author?.profilePic || authorimage}
                 alt=""
               />
-              <span className=" text-sm text-slate-400 capitalize font-semibold">{blog.author.fullname}</span>
+              <span className=" text-sm capitalize font-semibold">{blog.author.fullname}</span>
             </div>
           </div>
           <Link to={`/read/${blog._id}`}>
-          <h1 className="font-semibold text-slate-200 hover:text-blue-500 cursor-pointer hover:underline">
+          <h1 className="font-semibold hover:text-blue-500 cursor-pointer hover:underline">
                 {blog?.title}
           </h1>
           </Link>

@@ -33,7 +33,7 @@ const DeleteBlog = ({ blogId }) => {
       <button
         type="button"
         onClick={() => deleteBlog()}
-        className="bg-red-600 py-2 px-2 rounded-lg font-bold uppercase hover:opacity-75"
+        className="bg-red-600 py-2 px-2 text-white rounded-lg font-bold uppercase hover:opacity-75"
       >
         Delete Blog
       </button>
